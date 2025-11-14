@@ -1,2 +1,4 @@
+Implementation of CIP-Net: Continual Interpretable Prototype-based Network
+
 To run use (run from ./CIPNet)
 python src/main_incremental.py --results-path [path-results] --exp-name [path-experiment] --save-models --cipnetdataset [CUB-200-2011, Stanford_Cars_dataset] --dataset [cub_200_2011_cropped, cars] --batch-size 64 --num_tasks 4 --network cipnet --approach cipnet_inc  --pretrained --gpu [list-of-GPUS-to-run-on] --num_classes [200,196] --nepochs 20 --pretrain_epochs 10 --pretrain_cipnet --freeze_epochs 1 --use_heads --use_hoyer --use_proto_reg --save_model --lr 0.001 --lr_net 0.0001 --lr_block 0.0001 --lamb_proto 8.0 --lamb_hoyer 10.0 --num-workers 4 --parallelization DP --seed 1 --pin_memory 
